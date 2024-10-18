@@ -1,0 +1,152 @@
+/*
+let cachorro: new cachorro()
+class cachorro:
+cor: string = " "
+pelo: string = " "
+raca: string " "
+
+latir () -> string
+return "au au"
+andar () -> void;
+
+constuctor (raca:string){
+    this.raca = raca
+}
+
+------------------------------------------------------------------------------------------------------------------------  MÉTODO CONSTRUTOR STRING 
+
+classe musica {
+    nome:
+    estilo:
+    autor:
+    ano:
+
+    constuctor(nome, estilo. autor, ano){
+        this.nome = nome;
+        this.estilo = estilo;
+        this.autor = autor;
+        this.ano = ano
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------  MÉTODO CONSTRUTOR ENUMERADO
+
+classe mes (enun)
+1: janeiro
+2: fevereiro
+3: marco
+
+let mes = new mes(2)
+mes.valor = fevereiro
+
+------------------------------------------------------------------------------------------------------------------------ NEW, ALOCAR MEMORIA NA MINHA CLASSE.
+                ---> treino!!!!!
+class treino{
+    descircao: string
+    serie: number
+    repeticoes: number
+
+    constuctor(descircao: string, serie: number, repeticoes: number){
+        this.descircao = descircao
+        this.serie = serie
+        this.repeticoes = repeticoes
+    }
+}
+               ----> aluno!!!!
+class aluno{
+    nome: string = " "
+    sobre_nome: string = " "
+    peso: number = 0
+    altura: number = 0
+    treinos: treino[] = []
+    
+    calcularIMC(): number{
+        return this.peso/this.altura * this.altura  // precisa do this pra possuir o atributo da classe
+    }
+    adicionarTreino(treino:treino){
+        this.treino.push(treino)
+    }
+}
+                ----> academia !!
+let academia = new academia()
+let  aluno = new aluno()
+aluno.nome = " joao"
+aluno.sobre_nome = " das canha"
+aluno.peso = 90
+aluno.altura = 180
+console.log(aluno.calcularIMC())
+
+
+class academia{
+    alunos: aluno[] = []
+
+    adicionarAluno(aluno:aluno){
+        this.alunos.push(aluno)
+    }
+
+    adicionarTreinoAluno(descircao: string, serie: number, repeticoes: number)
+    treino= treino(descircao, serie, repeticoes)
+    aluno.adicionarTreino
+}
+
+academia.adicionarAluno(aluno)
+console.log(academia.alunos)
+academia.adicionarTreinoAluno(aluno, "biceps",3,12)
+console.log(aluno)
+*/
+
+class livraria {
+    livros: Livro[] = []
+    clientes: cliente[] = []
+    vendas: venda [] = []
+
+    adicionarLivro(livro: Livro){
+        this.livro.push(livraria)
+    }
+
+    adicionarVenda (venda: Venda){
+        this.vendas.push(livraria)
+    }
+}
+
+class livro {
+    titulo: string
+    lancamento: number
+    autor: string
+    categoria: string
+}
+
+class cliente {
+    nome: string
+    telefone: number
+    identidade: number
+    endereco: string
+
+        constuctor (nome: string, telefone: number, identidade: number, endereco: string){
+            this.nome = nome
+            this.telefone = telefone
+            this.identidade = identidade
+            this.endereco = endereco
+    }
+}
+
+class venda {
+    vendido: number
+    local: string 
+    livro: string
+    cliente: string
+    valor: number
+} 
+
+
+
+let livro1 = ('sol', 2020, 'vitoria', 'terror')
+let livro2 = ('lua', 2024, 'lucas', 'drama')
+let livro3 = ('terra', 1990, 'vitor', 'ficcao')
+
+
+let cliente1 = ('Pedro', 51, 01, sl)
+let cliente2 = ('Joao', 52, 02, nh)
+let cliente3 = ('Tiago', 53, 03, poa)
+
+
