@@ -1,48 +1,14 @@
-/*
-1)
-class CadastroCliente{
-    nome: string
-    fone:number
-    endereco:string
-    cpf: string
-}
-
-class CadastroVeiculos{
-    placa:string
-    modelo:string
-    marca:string
-    ano:number
-}
-
-class Entrega{
-    data:number
-    hora:number
-    local: string
-    nomeCliente:string
-}
-
-class NotaFiscal{
-    data: number
-    horario:number
-    local:string
-    produto:string
-    valor:number
-    qnte:number
-}
-
-class Carga{
-    seca:
-----------------------------------------------------------------------------------------------------------------
-
-2)
 class Cliente{nome: string; fone:number; endereco:string; cpf: string
     constructor (nome:string, fone:number, endereco:string, cpf:string)
     {this.nome=nome, this.fone=fone, this.endereco=endereco, this.cpf=cpf}
 }
 
 class ClienteContratante extends Cliente{freteFrequente:boolean
-    constructor (freteFrequente:boolean)
-    {this.freteFrequente=freteFrequente}
+    constructor (nome, fone, endereco,cpf, freteFrequente:boolean)
+    {
+        super(nome, fone, endereco, cpf)
+        this.freteFrequente=freteFrequente
+    }
 }
 
 class ClienteEsporadico extends Cliente{freteEsporadicamente:boolean
@@ -83,5 +49,4 @@ let route = new Rota ()
 let delivery = new Entrega ()
 let invoice = new NotaFiscal()
 Carga.adicionarpedido(Pedido)
-*/
 
