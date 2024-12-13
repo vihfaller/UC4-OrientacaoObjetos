@@ -24,7 +24,7 @@ class Pedido{pedido: string;cliente:Cliente[]=[]; carga: Carga[]=[]; entrega: En
     
 
 class Carga{pedido: Pedido; peso:number; volume: number; tipo: string; origem: string; destino: string; dataeEmbarque:number; dataEntrega:number
-    adicionarPedido(pedido: Pedido){this.pedido.push(Carga)}
+    adicionarPedido(pedido: Pedido){this.pedido}
 }
 
 class Motorista{nome: string; cnh:boolean; categoria:string; experiencia: string; veiculoAtribuido: string
@@ -40,7 +40,7 @@ class NotaFiscal{ numero:number; dataEmissao:number; cliente: Cliente; item: Car
 }
 
 let customer = new Cliente('Vitoria', 213465, 'Saldanha da Gama', '268974156230')
-let contracting = new ClienteContratante (true)
+let contracting = new ClienteContratante ('Lucas',123456, 'Joao Correa', '06589', true)
 let sporadic = new ClienteEsporadico('Vitor', 8458485, 'Rua Brasil', '8474858')
 let vehicle = new Veiculo ()
 let load = new Carga ()
@@ -48,5 +48,3 @@ let driver = new Motorista ()
 let route = new Rota ()
 let delivery = new Entrega ()
 let invoice = new NotaFiscal()
-Carga.adicionarpedido(Pedido)
-
