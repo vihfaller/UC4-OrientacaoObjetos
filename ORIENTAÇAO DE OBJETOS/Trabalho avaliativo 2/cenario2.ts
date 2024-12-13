@@ -14,25 +14,6 @@ class Funcionario{
     }
 }
 
-class Pagamento{
-    pix:string;
-    dinheiro:string
-    
-    public pagamento(chefe:Employer, empregado:Funcionario, método:Pagamento){
-        return `O funcionário ${empregado.funcionario} recebeu seu salário no valor de R$${método.pix} por ${chefe.nomeCompleto}.`
-    }
-
-    setName(){
-        return this.dinheiro
-        return this.pix
-    }
-
-    getName(){
-        return this.dinheiro
-        return this.pagamento
-    }
-}
-    
 
 class Horista extends Funcionario{//salario de 1.000;;;; hrsMes/7= resultado * 4 = resultado *8
 }

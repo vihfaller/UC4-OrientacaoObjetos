@@ -162,5 +162,3 @@ let rendFixed = new RendaFixa()
 let variavel = new RendaVariavel()
 let mercardMulti = new Multimercado()
 */
-
-class 
